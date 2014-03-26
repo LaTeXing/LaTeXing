@@ -13,4 +13,5 @@ Roadmap
 - Include autofill for \glossaries package commands
 - Options to customize Texcount
 - Line wrap for the build error window
+- Do not replace spaces by underscores in output filenames
 - Support for latex2rtf
