@@ -9,8 +9,9 @@ Over time this repository will also become a TODO list so you can easily see whe
 Roadmap
 -------
 
-- Support for latex2rtf
+- Support for latex2rtf ([#1](/../../issues/1))
+- Equation Editor ([#8](/../../issues/8))
 - Include autofill for \glossaries package commands
 - Options to customize Texcount
 - Line wrap for the build error window
-- Do not replace spaces by underscores in output filenames
+- Do not replace spaces by underscores in output filenames ([#3](/../../issues/3))
