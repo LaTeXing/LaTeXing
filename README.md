@@ -15,3 +15,4 @@ Roadmap
 - Options to customize Texcount
 - Line wrap for the build error window
 - Do not replace spaces by underscores in output filenames ([#3](/../../issues/3))
+- Search current file for refs in partial build mode ([#19](/../../issues/19))
