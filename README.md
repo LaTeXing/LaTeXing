@@ -5,6 +5,7 @@ This is a public repository for hosting the Issue Tracker. Please feel free to c
 
 Over time this repository will also become a TODO list so you can easily see where this extension is heading towards.
 
+**With version 1.2.8 a lot of internal things changed. If you have an problems with the installation please check [#111](/../../issues/111).**
 
 Roadmap
 -------
