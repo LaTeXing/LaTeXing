@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+\begin{align}
+    $0
+\end{align}
+]]></content>
+  <tabTrigger>align</tabTrigger>
+  <scope>text.tex.latex</scope>
+  <description>New align</description>
+</snippet>

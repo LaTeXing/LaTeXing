@@ -1,0 +1,193 @@
+[
+    {
+        "keys": ["`"],
+        "command": "ltx_insert_special_symbols",
+        "context": [
+            {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+            {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+        ]
+    },
+    {
+        "keys": ["`"],
+        "command": "ltx_insert_special_symbols", "args": {"braket_source": true},
+        "context": [
+            {"key": "following_text", "match_all": true, "operand": "^[>\\)\\]\\}]", "operator": "regex_contains"},
+            {"key": "preceding_text", "match_all": true, "operand": "[<\\(\\[\\{]$", "operator": "regex_contains"},
+            {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+            {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+        ]
+    },
+    {
+        "keys": ["`"],
+        "command": "ltx_insert_tex_symbol",
+        "context": [
+            {"key": "preceding_text", "match_all": true, "operand": "(^$)|([\\s\\$]$)", "operator": "regex_contains"},
+            {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+            {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+        ]
+    },
+    {
+        "keys": ["ctrl+l", "ctrl+b"],
+        "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Build: "},
+        "context": [
+            {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+        ]
+    },
+    {
+        "keys": ["ctrl+l", "ctrl+c"],
+        "command": "ltx_latex_command",
+        "context": [
+            {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+        ]
+    },
+    {
+        "keys": ["ctrl+l", "ctrl+d"],
+        "command": "ltx_online_lookup",
+        "context": [
+            {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+        ]
+    },
+    {
+        "keys": ["ctrl+l", "ctrl+e"],
+        "command": "ltx_latex_environment",
+        "context": [
+            {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+        ]
+    },
+    {
+        "keys": ["ctrl+l", "ctrl+j"],
+        "command": "ltx_jump_to_pdf",
+        "context": [
+            {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+        ]
+    },
+    {
+        "keys": ["ctrl+l", "ctrl+k"],
+        "command": "ltx_open",
+        "context": [
+            {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+        ]
+    },
+    {
+        "keys": ["ctrl+l", "ctrl+l"],
+        "command": "ltx_fill",
+        "context": [
+            {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+        ]
+    },
+    {
+        "keys": ["ctrl+l", "ctrl+n"],
+        "command": "ltx_insert_latex_environment",
+        "context": [
+            {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+        ]
+    },
+    {
+        "keys": ["ctrl+l", "ctrl+o"],
+        "command": "ltx_open_pdf",
+        "context": [
+            {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+        ]
+    },
+    {
+        "keys": ["ctrl+l", "ctrl+p"],
+        "command": "show_overlay", "args": {"overlay": "command_palette", "text": "LaTeXing: "},
+        "context": [
+            {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+        ]
+    },
+    {
+        "keys": ["ctrl+l", "ctrl+r"],
+        "command": "ltx_cite_import",
+        "context": [
+            {"key": "selector", "operand": "text.tex.latex, text.bibtex", "operator": "equal"}
+        ]
+    },
+    {
+        "keys": ["ctrl+l", "ctrl+s"],
+        "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Snippet: "},
+        "context": [
+            {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+        ]
+    },
+    {
+        "keys": ["ctrl+l", "ctrl+shift+e"],
+        "command": "ltx_rename_latex_environment",
+        "context": [
+            {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+        ]
+    },
+    {
+        "keys": ["ctrl+l", "ctrl+t"],
+        "command": "ltx_toggle_preferences",
+        "context": [
+            {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+        ]
+    },
+    {
+        "keys": ["ctrl+l", "ctrl+u"],
+        "command": "ltx_save_phrases",
+        "context": [
+            {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+        ]
+    },
+    {
+        "keys": ["ctrl+l", "ctrl+w", "b"],
+        "command": "insert_snippet", "args": {"name": "Packages/LaTeXing/snippets/wrapper/textbf.sublime-snippet"},
+        "context": [
+            {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+        ]
+    },
+    {
+        "keys": ["ctrl+l", "ctrl+w", "e"],
+        "command": "insert_snippet", "args": {"name": "Packages/LaTeXing/snippets/wrapper/emph.sublime-snippet"},
+        "context": [
+            {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+        ]
+    },
+    {
+        "keys": ["ctrl+l", "ctrl+w", "u"],
+        "command": "insert_snippet", "args": {"name": "Packages/LaTeXing/snippets/wrapper/underline.sublime-snippet"},
+        "context": [
+            {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+        ]
+    },
+    {
+        "keys": ["ctrl+shift+8"],
+        "command": "ltx_star_latex_environment",
+        "context": [
+            {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+        ]
+    },
+    {
+        "keys": ["ctrl+shift+["],
+        "command": "ltx_fold_environment",
+        "context": [
+            {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+        ]
+    },
+    {
+        "keys": ["ctrl+shift+l", "ctrl+shift+k"],
+        "command": "ltx_open_anywhere",
+        "context": [
+            {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+            {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+        ]
+    },
+    {
+        "keys": ["ctrl+shift+l", "ctrl+shift+l"],
+        "command": "ltx_fill_anywhere",
+        "context": [
+            {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+            {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+        ]
+    },
+    {
+        "keys": ["ctrl+super+b"],
+        "command": "ltx_quick_build_compiler"
+    },
+    {
+        "keys": ["shift+ctrl+b"],
+        "command": "ltx_quick_build_compiler", "args": {"primary_qb": true}
+    }
+]

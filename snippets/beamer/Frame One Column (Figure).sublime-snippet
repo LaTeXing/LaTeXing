@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+\begin{frame}
+	\frametitle{${1:One Column (Figure)}}
+	\framesubtitle{${2:One Column (Figure) - Subtitle}}
+	\begin{center}
+		\includegraphics[height=0.75\textheight]{$3}
+	\end{center}
+\end{frame}
+]]></content>
+  <tabTrigger>framef</tabTrigger>
+  <scope>text.tex.latex.beamer, text.tex.latex.knitr.beamer</scope>
+	<description>Beamer: Frame One Column (Figure)</description>
+</snippet>

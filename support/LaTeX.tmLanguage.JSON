@@ -1,0 +1,130 @@
+{
+  "fileTypes": [
+    "tex",
+    "ltx"
+  ],
+  "name": "LaTeXing",
+  "patterns": [
+    {
+      "match": "%\\s*-\\*-\\s*(?:root|pdf)\\s*:\\s*(.+)-\\*-",
+      "name": "comment.line.percentage.latexing"
+    },
+    {
+      "match": "(%).*$\\n?",
+      "name": "comment.line.percentage.tex meta.no-spellcheck"
+    },
+    {
+      "begin": "((\\\\)(?:subfile))(\\{)",
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.control.include.latex"
+        },
+        "2": {
+          "name": "punctuation.definition.function.latex"
+        },
+        "3": {
+          "name": "punctuation.definition.arguments.begin.latex"
+        }
+      },
+      "contentName": "support.class.latex",
+      "end": "\\}",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.arguments.end.latex"
+        }
+      },
+      "name": "meta.include.latex",
+      "patterns": [
+        {
+          "include": "$self"
+        }
+      ]
+    },
+    {
+      "begin": "((\\\\)(?:bibliography))(\\{)",
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.control.bibliography.latex"
+        },
+        "2": {
+          "name": "punctuation.definition.function.latex"
+        },
+        "3": {
+          "name": "punctuation.definition.arguments.begin.latex"
+        }
+      },
+      "contentName": "support.class.latex",
+      "end": "\\}",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.arguments.end.latex"
+        }
+      },
+      "name": "meta.function.bibliography.latex",
+      "patterns": [
+        {
+          "include": "$self"
+        }
+      ]
+    },
+    {
+      "begin": "((\\\\)(?:bibentry))(\\{)",
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.control.bibentry.latex"
+        },
+        "2": {
+          "name": "punctuation.definition.function.latex"
+        },
+        "3": {
+          "name": "punctuation.definition.arguments.begin.latex"
+        }
+      },
+      "contentName": "support.class.latex",
+      "end": "\\}",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.arguments.end.latex"
+        }
+      },
+      "name": "meta.citation.bibentry",
+      "patterns": [
+        {
+          "include": "$self"
+        }
+      ]
+    },
+    {
+      "begin": "((\\\\)(?:hyperref))(\\[)",
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.control.hyperref.latex"
+        },
+        "2": {
+          "name": "punctuation.definition.function.latex"
+        },
+        "3": {
+          "name": "punctuation.definition.arguments.begin.latex"
+        }
+      },
+      "contentName": "support.class.latex",
+      "end": "\\]",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.arguments.end.latex"
+        }
+      },
+      "name": "meta.citation.hyperref",
+      "patterns": [
+        {
+          "include": "$self"
+        }
+      ]
+    },
+    {
+      "include": "text.tex.latex"
+    }
+  ],
+  "scopeName": "text.tex.latex.ing",
+  "uuid": "2227a33d-299e-4aff-b493-4f9d2375f5ad"
+}

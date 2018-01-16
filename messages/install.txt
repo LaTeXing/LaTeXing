@@ -1,0 +1,16 @@
+LaTeXing Plugin
+
+Thank you for installing the LaTeXing plugin!
+
+To learn more about the features of this plugin, check the github page:
+
+https://github.com/LaTeXing/LaTeXing
+
+The autocompletion of many LaTeX commands is available via the Plugin https://github.com/LaTeXing/LaTeX-cwl.
+
+The documentation of LaTeXing is accessable via:
+
+https://github.com/LaTeXing/LaTeXing-Documentation
+
+Enjoy the work with LaTeXing!
+aka Chris

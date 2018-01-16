@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[\\textrm{${1:$SELECTION}}]]></content>
+	<scope>text.tex.latex</scope>
+	<description>Roman Font Family Text</description>
+</snippet>

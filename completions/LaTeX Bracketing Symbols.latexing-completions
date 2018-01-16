@@ -1,0 +1,16 @@
+{
+	"scope": "string.other.math",
+	"completions":
+	[
+		"\\{",
+		"\\}",
+		"\\|",
+		"\\backslash",
+		"\\lfloor",
+		"\\rfloor",
+		"\\lceil",
+		"\\rceil",
+		"\\langle",
+		"\\rangle"
+	]
+}

@@ -1,0 +1,23 @@
+{
+	"scope": "string.other.math",
+	"completions":
+	[
+		"\\hat{arg}",
+		"\\check{arg}",
+		"\\dot{arg}",
+		"\\breve{arg}",
+		"\\acute{arg}",
+		"\\ddot{arg}",
+		"\\grave{arg}",
+		"\\tilde{arg}",
+		"\\mathring{arg}",
+		"\\bar{arg}",
+
+		"\\vec{arg}",
+		"\\vec{\\jmath}",
+		"\\tilde{\\imath}",
+
+		"\\widehat{arg}",
+		"\\widetilde{arg}"
+	]
+}

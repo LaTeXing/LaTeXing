@@ -1,0 +1,17 @@
+{
+  "fileTypes": [
+    "tex",
+    "ltx"
+  ],
+  "name": "LaTeXing Beamer",
+  "patterns": [
+    {
+      "include": "text.tex.latex.beamer"
+    },
+    {
+      "include": "text.tex.latex.ing"
+    }
+  ],
+  "scopeName": "text.tex.latex.beamer.ing",
+  "uuid": "462713e0-811d-45ef-8810-15df1b5c86c3"
+}

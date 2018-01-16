@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+\begin{frame}[${1:t}]
+	\frametitle{${2:title}}
+	\framesubtitle{${3:subtitle}}
+	$0
+\end{frame}
+]]></content>
+  <tabTrigger>frame</tabTrigger>
+  <scope>text.tex.latex.beamer, text.tex.latex.knitr.beamer</scope>
+	<description>Beamer: Simple Frame</description>
+</snippet>

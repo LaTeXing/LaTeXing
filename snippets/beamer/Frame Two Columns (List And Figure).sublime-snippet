@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[
+\begin{frame}
+	\frametitle{${1:Two Columns (List and Figure)}}
+	\framesubtitle{${2:Two Columns (List and Figure) - Subtitle}}
+	\begin{columns}[c]
+		\column{0.5\textwidth}
+			\begin{block}{${4:Steps}}
+				\begin{itemize}
+					\item<1-> ${5:Item 1}
+					\item<2-> ${6:Item 2}
+				\end{itemize}
+			\end{block}
+		\column{0.5\textwidth}
+			\includegraphics[width=0.7\textwidth]{$3}
+	\end{columns}
+\end{frame}
+]]></content>
+  <tabTrigger>framelf</tabTrigger>
+	<scope>text.tex.latex.beamer, text.tex.latex.knitr.beamer</scope>
+	<description>Beamer: Frame Two Columns (List and Figure)</description>
+</snippet>

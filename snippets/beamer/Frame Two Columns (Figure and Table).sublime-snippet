@@ -1,0 +1,24 @@
+<snippet>
+    <content><![CDATA[
+\begin{frame}
+	\frametitle{${1:Two Columns (Figure and Table)}}
+	\framesubtitle{${2:Two Columns (Figure and Table) - Subtitle}}
+	\begin{columns}[c]
+		\column{0.5\textwidth}
+			\includegraphics[width=0.7\textwidth]{$3}
+		\column{0.5\textwidth}
+			\renewcommand{\arraystretch}{1.3}
+			\begin{tabular}{${4:c c}}
+				\hline					
+					\textbf{Col1} & \textbf{Col2} \\\\
+					Row 1 1 & Row 1 2 \\\\
+					Row 2 1 & Row 2 2 \\\\
+				\hline
+			\end{tabular}
+	\end{columns}
+\end{frame}
+]]></content>
+  <tabTrigger>frameft</tabTrigger>
+	<scope>text.tex.latex.beamer, text.tex.latex.knitr.beamer</scope>
+	<description>Beamer: Frame Two Columns (Figure and Table)</description>
+</snippet>

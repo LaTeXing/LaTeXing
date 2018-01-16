@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}<{}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}m{#1}<{}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}m{#1}<{}}
+]]></content>
+  <scope>text.tex.latex</scope>
+  <description>Table: New Table Columntypes</description>
+</snippet>

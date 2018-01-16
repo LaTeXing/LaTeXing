@@ -1,0 +1,106 @@
+{
+	"scope": "text.bibtex meta.entry.braces.bibtex",
+	"completions":
+	[
+		{
+			"trigger": "address", 
+			"contents": "address = {${1:Address}},"
+		},
+		{
+			"trigger": "annote", 
+			"contents": "annote = {${1:Annote}},"
+		},
+		{
+			"trigger": "author", 
+			"contents": "author = {${1:Author}},"
+		},
+		{
+			"trigger": "booktitle", 
+			"contents": "booktitle = {${1:Booktitle}},"
+		},
+		{
+			"trigger": "chapter", 
+			"contents": "chapter = {${1:Chapter}},"
+		},
+		{
+			"trigger": "crossref", 
+			"contents": "crossref = {${1:Crossref}},"
+		},
+		{
+			"trigger": "edition", 
+			"contents": "edition = {${1:Edition}},"
+		},
+		{
+			"trigger": "editor", 
+			"contents": "editor = {${1:Editor}},"
+		},
+		{
+			"trigger": "eprint", 
+			"contents": "eprint = {${1:Eprint}},"
+		},								
+		{
+			"trigger": "howpublished", 
+			"contents": "howpublished = {${1:Howpublished}},"
+		},
+		{
+			"trigger": "institution", 
+			"contents": "institution = {${1:Institution}},"
+		},
+		{
+			"trigger": "journal", 
+			"contents": "journal = {${1:Journal}},"
+		},
+		{
+			"trigger": "month", 
+			"contents": "month = {${1:Month}},"
+		},
+		{
+			"trigger": "note", 
+			"contents": "note = {${1:Note}},"
+		},
+		{
+			"trigger": "number", 
+			"contents": "number = {${1:Number}},"
+		},
+		{
+			"trigger": "organization", 
+			"contents": "organization = {${1:Organization}},"
+		},
+		{
+			"trigger": "pages", 
+			"contents": "pages = {${1:Pages}},"
+		},
+		{
+			"trigger": "publisher", 
+			"contents": "publisher = {${1:Publisher}},"
+		},
+		{
+			"trigger": "school", 
+			"contents": "school = {${1:School}},"
+		},
+		{
+			"trigger": "series", 
+			"contents": "series = {${1:Series}},"
+		},
+		{
+			"trigger": "title", 
+			"contents": "title = {${1:Title}},"
+		},
+		{
+			"trigger": "type", 
+			"contents": "type = {${1:Type}},"
+		},
+		{
+			"trigger": "url", 
+			"contents": "url = {${1:Url}},"
+		},
+		{
+			"trigger": "volume", 
+			"contents": "volume = {${1:Volume}},"
+		},
+		{
+			"trigger": "year", 
+			"contents": "year = {${1:Year}},"
+		}
+	]
+}

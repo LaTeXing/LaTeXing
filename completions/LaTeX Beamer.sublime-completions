@@ -1,0 +1,18 @@
+{
+	"scope": "text.tex.latex.beamer constant.character.escapce.tex",
+	"completions":
+	[
+		{
+			"trigger": "uncover", 
+			"contents": "\\uncover<${1:+-}>{$2}"
+		},
+		{
+			"trigger": "visible",
+			"contents": "\\visible<${1:+-}>{$2}"
+		},
+		{
+			"trigger": "only",
+			"contents": "\\only<${1:+-}>{$2}"
+		}
+	]
+}

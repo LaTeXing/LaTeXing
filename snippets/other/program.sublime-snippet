@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[% -*- program: ${1:Value} -*-]]></content>
+	<tabTrigger>ltx program</tabTrigger>
+  <scope>text.tex.latex</scope>
+  <description>LaTeXing Option Program</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+$1
+
+\\end{document}
+]]></content>
+	<tabTrigger>documentclass{report}</tabTrigger>
+	<scope>text.plain, text.tex.latex</scope>
+	<description>New Report</description>
+</snippet>

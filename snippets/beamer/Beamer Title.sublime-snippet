@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+\title{}
+\author{}
+\institute{}
+\date{}
+]]></content>
+  <tabTrigger>title</tabTrigger>
+  <scope>text.tex.latex.beamer, text.tex.latex.knitr.beamer</scope>
+	<description>Beamer: Title</description>
+</snippet>

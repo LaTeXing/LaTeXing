@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+\begin{frame}
+	\frametitle{${1:Two Rows (List and Figure)}}
+	\framesubtitle{${2:Two Rows (List and Figure) - Subtitle}}
+	\begin{itemize}
+		\item ${4:Item 1}
+		\item ${5:Item 2}
+	\end{itemize}
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{$3}
+	\end{center}
+\end{frame}
+]]></content>
+  <tabTrigger>framelf_</tabTrigger>
+	<scope>text.tex.latex.beamer, text.tex.latex.knitr.beamer</scope>
+	<description>Beamer: Frame Two Rows (List and Figure)</description>
+</snippet>

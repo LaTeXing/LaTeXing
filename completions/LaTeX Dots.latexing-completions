@@ -1,0 +1,16 @@
+{
+	"scope": "string.other.math",
+	"completions":
+	[
+		"\\ldots",
+		"\\vdots",
+		"\\cdots",
+		"\\ddots",
+		
+		"\\dotsb",
+		"\\dotsi",
+		"\\dotsc",
+		"\\dotsm",
+		"\\dotso"
+	]
+}

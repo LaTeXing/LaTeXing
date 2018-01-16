@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+\documentclass[${1:../Document.tex}]{subfiles}
+
+\begin{document}
+
+$2
+
+\\end{document}
+]]></content>
+  <tabTrigger>documentclass{subfiles}</tabTrigger>
+  <scope>text.plain, text.tex.latex</scope>
+  <description>New Subfiles</description>
+</snippet>

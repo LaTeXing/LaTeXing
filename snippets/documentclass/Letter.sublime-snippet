@@ -1,0 +1,31 @@
+<snippet>
+  <content><![CDATA[
+\documentclass{letter}
+\usepackage[utf8]{inputenc}
+
+\address{your name and address} 
+\date{\today}
+\signature{your signature} 
+
+\begin{document} 
+
+\begin{letter}{name and address of the recipient} 
+
+\opening{saying hello} 
+ 
+write your letter here 
+ 
+\closing{saying goodbye} 
+
+\cc{Cclist} 
+\ps{adding a postscript} 
+\encl{list of enclosed material} 
+
+\end{letter} 
+
+\end{document}
+]]></content>
+  <tabTrigger>documentclass{letter}</tabTrigger>
+  <scope>text.plain, text.tex.latex</scope>
+  <description>New Letter</description>
+</snippet>

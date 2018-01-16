@@ -1,0 +1,37 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+# Copyright (C) 2010 Jose Aliste
+#               2011 Benjamin Kellermann
+#
+# This program is free software; you can redistribute it and/or modify it under
+# the terms of the GNU General Public Licence as published by the Free Software
+# Foundation; either version 2 of the Licence, or (at your option) any later
+# version.
+#
+# This program is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+# FOR A PARTICULAR PURPOSE.  See the GNU General Public Licence for more
+# details.
+#
+# You should have received a copy of the GNU General Public Licence along with
+# this program; if not, write to the Free Software Foundation, Inc., 51 Franklin
+# Street, Fifth Floor, Boston, MA  02110-1301, USA
+
+import dbus, os.path, sys, time
+
+try:
+    from urllib.parse import quote
+except:
+    from urllib import quote
+
+pdf_file = os.path.abspath(sys.argv[1]).replace(" ", "%20")
+line = int(sys.argv[2])
+tex_file = os.path.join(os.path.dirname(os.path.abspath(sys.argv[3])), './', os.path.basename(os.path.abspath(sys.argv[3])))
+
+bus = dbus.SessionBus()
+daemon = bus.get_object('org.gnome.evince.Daemon', '/org/gnome/evince/Daemon')
+dbus_name = daemon.FindDocument('file://' + quote(pdf_file, safe = "%/:=&?~#+!$,;'@()*[]"), True, dbus_interface = 'org.gnome.evince.Daemon')
+window = bus.get_object(dbus_name, '/org/gnome/evince/Window/0')
+time.sleep(0.2)
+window.SyncView(tex_file, (line, 1), 0, dbus_interface = 'org.gnome.evince.Window')

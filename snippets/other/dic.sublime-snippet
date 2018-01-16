@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[% -*- dic: ${1:Value} -*-]]></content>
+	<tabTrigger>ltx dic</tabTrigger>
+  <scope>text.tex.latex</scope>
+  <description>LaTeXing Option Dictionary</description>
+</snippet>

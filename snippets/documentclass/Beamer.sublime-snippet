@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+\documentclass{beamer}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+$1
+
+\\end{document}
+]]></content>
+    <tabTrigger>documentclass{beamer}</tabTrigger>
+    <scope>text.plain, text.tex.latex</scope>
+    <description>New Beamer</description>
+</snippet>

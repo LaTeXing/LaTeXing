@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[\\textbf{${1:$SELECTION}}]]></content>
+	<scope>text.tex.latex</scope>
+	<description>Boldface Text</description>
+</snippet>

@@ -1,0 +1,20 @@
+{
+	"scope": "string.other.math",
+	"completions":
+	[
+		"\\sum",
+		"\\int",
+		"\\oint",
+		"\\prod",
+		"\\coprod",
+		"\\bigcap",
+		"\\bigcup",
+		"\\bigsqcup",
+		"\\bigvee",
+		"\\bigwedge",
+		"\\bigodot",
+		"\\bigotimes",
+		"\\bigoplus",
+		"\\biguplus"
+	]
+}

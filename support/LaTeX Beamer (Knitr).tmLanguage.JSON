@@ -1,0 +1,21 @@
+{
+  "fileTypes": [
+    "rnw",
+    "snw",
+    "rtex"
+  ],
+  "name": "LaTeXing Beamer (Knitr)",
+  "patterns": [
+    {
+      "include": "text.tex.latex.knitr"
+    },
+    {
+      "include": "text.tex.latex.beamer"
+    },
+    {
+      "include": "text.tex.latex.ing"
+    }
+  ],
+  "scopeName": "text.tex.latex.knitr.beamer.ing",
+  "uuid": "05bb5882-3f46-4654-ae5d-db028e5d9569"
+}

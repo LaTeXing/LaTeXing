@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[\\textit{${1:$SELECTION}}]]></content>
+	<scope>text.tex.latex</scope>
+	<description>Italic Shape Text</description>
+</snippet>

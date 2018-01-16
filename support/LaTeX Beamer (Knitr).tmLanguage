@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>rnw</string>
+		<string>snw</string>
+		<string>rtex</string>
+	</array>
+	<key>name</key>
+	<string>LaTeXing Beamer (Knitr)</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>text.tex.latex.knitr</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>text.tex.latex.beamer</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>text.tex.latex.ing</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>text.tex.latex.knitr.beamer.ing</string>
+	<key>uuid</key>
+	<string>05bb5882-3f46-4654-ae5d-db028e5d9569</string>
+</dict>
+</plist>

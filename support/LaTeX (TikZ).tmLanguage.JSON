@@ -1,0 +1,17 @@
+{
+  "fileTypes": [
+    "fig",
+    "tikz"
+  ],
+  "name": "LaTeXing (TikZ)",
+  "patterns": [
+    {
+      "include": "text.tex.latex.tikz"
+    },
+    {
+      "include": "text.tex.latex"
+    }
+  ],
+  "scopeName": "text.tex.latex.tikz.ing",
+  "uuid": "076d0b93-e355-41f2-925a-e9c140144693"
+}

@@ -1,0 +1,170 @@
+[
+    {
+        "caption": "Build: Primary Quick Build",
+        "command": "ltx_quick_build_compiler", "args": {"primary_qb": true}
+    },
+    {
+        "caption": "Build: Custom Quick Build",
+        "command": "ltx_quick_build_compiler"
+    },
+    {
+        "caption": "LaTeXing: Buy License",
+        "command": "ltx_buy_license"
+    },
+    {
+        "caption": "LaTeXing: Changelog",
+        "command": "ltx_changelog"
+    },
+    {
+        "caption": "LaTeXing: Check System",
+        "command": "ltx_check_system"
+    },
+    {
+        "caption": "LaTeXing: Clean Temporary Output Dictionary",
+        "command": "ltx_clean_temp"
+    },
+    {
+        "caption": "LaTeXing: Documentation",
+        "command": "ltx_open_documentation"
+    },
+    {
+        "caption": "LaTeXing: Fill",
+        "command": "ltx_fill"
+    },
+    {
+        "caption": "LaTeXing: Fill Anywhere",
+        "command": "ltx_fill_anywhere"
+    },
+    {
+        "caption": "LaTeXing: Fold Environment",
+        "command": "ltx_fold_environment"
+    },
+    {
+        "caption": "LaTeXing: Fold Section",
+        "command": "ltx_fold_section"
+    },
+    {
+        "caption": "LaTeXing: Import Citation(s)",
+        "command": "ltx_cite_import"
+    },
+    {
+        "caption": "LaTeXing: Insert TeX Symbol",
+        "command": "ltx_insert_tex_symbol"
+    },
+    {
+        "caption": "LaTeXing: Install License",
+        "command": "ltx_install_license"
+    },
+    {
+        "caption": "LaTeXing: Jump To PDF",
+        "command": "ltx_jump_to_pdf"
+    },
+    {
+        "caption": "LaTeXing: Lookup TeX Symbol",
+        "command": "ltx_lookup_tex_symbol"
+    },
+    {
+        "caption": "LaTeXing: New Command for Current Word",
+        "command": "ltx_latex_command"
+    },
+    {
+        "caption": "LaTeXing: New Environment",
+        "command": "ltx_insert_latex_environment"
+    },
+    {
+        "caption": "LaTeXing: New Environment for Current Word",
+        "command": "ltx_latex_environment"
+    },
+    {
+        "caption": "LaTeXing: Online Lookup",
+        "command": "ltx_online_lookup"
+    },
+    {
+        "caption": "LaTeXing: Open",
+        "command": "ltx_open"
+    },
+    {
+        "caption": "LaTeXing: Open Anywhere",
+        "command": "ltx_open_anywhere"
+    },
+    {
+        "caption": "LaTeXing: Open PDF",
+        "command": "ltx_open_pdf"
+    },
+    {
+        "caption": "LaTeXing: Phrases Dictionary",
+        "command": "ltx_open_phrases_dictionary"
+    },
+    {
+        "caption": "LaTeXing: Rebuild Cache",
+        "command": "ltx_rebuild_cache"
+    },
+    {
+        "caption": "LaTeXing: Rebuild Cache (Hard)",
+        "command": "ltx_rebuild_cache", "args": {"soft": false}
+    },
+    {
+        "caption": "LaTeXing: Rename Environment",
+        "command": "ltx_rename_latex_environment"
+    },
+    {
+        "caption": "LaTeXing: Save Cache",
+        "command": "ltx_save_cache"
+    },
+    {
+        "caption": "LaTeXing: Show Log Panel",
+        "command": "show_panel", "args": {"panel": "output.exec"}
+    },
+    {
+        "caption": "LaTeXing: Synchronise Remote Data",
+        "command": "ltx_sync_data"
+    },
+    {
+        "caption": "LaTeXing: Texcount",
+        "command": "ltx_texcount"
+    },
+    {
+        "caption": "LaTeXing: Toggle Offline Mode",
+        "command": "ltx_offline"
+    },
+    {
+        "caption": "LaTeXing: Toggle Star Environment",
+        "command": "ltx_star_latex_environment"
+    },
+    {
+        "caption": "LaTeXing: Toggle TikZ Live Preview",
+        "command": "ltx_tikz_live_preview"
+    },
+    {
+        "caption": "LaTeXing: Update Bibliography File(s)",
+        "command": "ltx_sync_bib_file"
+    },
+    {
+        "caption": "LaTeXing: Version",
+        "command": "ltx_version"
+    },
+    {
+        "caption": "LaTeXing: Word to Phrases Dictionary",
+        "command": "ltx_save_phrases"
+    },
+    {
+        "caption": "Preferences: LaTeXing Settings - Default",
+        "command": "open_file", "args": {"file": "${packages}/LaTeXing/LaTeXing.sublime-settings"}
+    },
+    {
+        "caption": "Preferences: LaTeXing Settings - Default (Extended)",
+        "command": "ltx_extended_preferences"
+    },
+    {
+        "caption": "Preferences: LaTeXing Settings - Toggle Value",
+        "command": "ltx_toggle_preferences"
+    },
+    {
+        "caption": "Preferences: LaTeXing Settings - User",
+        "command": "open_file", "args": {"file": "${packages}/User/LaTeXing.sublime-settings"}
+    },
+    {
+        "caption": "Preferences: LaTeXing Settings - User (Extended)",
+        "command": "ltx_extended_preferences", "args": {"user": true}
+    }
+]

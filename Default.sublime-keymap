@@ -1,0 +1,452 @@
+[
+  {
+    "keys": ["\""],
+    "command": "insert_snippet", "args": {"contents": "``$0''"},
+    "context": [
+      {"key": "eol_selector", "match_all": true, "operand": "comment.line.percentage", "operator": "not_equal"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex", "operator": "equal"},
+      {"key": "selector", "operand": "source.r", "operator": "not_equal"},
+      {"key": "selector", "operand": "meta.block.parameters.knitr", "operator": "not_equal"},
+      {"key": "selector", "operand": "meta.block.parameters.knitr", "operator": "not_equal"},
+      {"key": "setting.auto_match_enabled", "operand": true, "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["\""],
+    "command": "insert_snippet", "args": {"contents": "``${0:$SELECTION}''"},
+    "context": [
+      {"key": "eol_selector", "match_all": true, "operand": "comment.line.percentage", "operator": "not_equal"},
+      {"key": "selection_empty", "match_all": true, "operand": false, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex", "operator": "equal"},
+      {"key": "selector", "operand": "source.r", "operator": "not_equal"},
+      {"key": "selector", "operand": "meta.block.parameters.knitr", "operator": "not_equal"},
+      {"key": "selector", "operand": "meta.block.parameters.knitr", "operator": "not_equal"},
+      {"key": "setting.auto_match_enabled", "operand": true, "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["\""],
+    "command": "run_macro_file", "args": {"file": "res://Packages/LaTeXing/macros/Move Two Characters.hidden-sublime-macro"},
+    "context": [
+      {"key": "following_text", "match_all": false, "operand": "^''", "operator": "regex_contains"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex", "operator": "equal"},
+      {"key": "selector", "operand": "source.r", "operator": "not_equal"}
+    ]
+  },
+  {
+    "keys": ["$"],
+    "command": "insert_snippet", "args": {"contents": "\\$${0:$SELECTION}\\$"},
+    "context": [
+      {"key": "eol_selector", "match_all": true, "operand": "comment.line.percentage", "operator": "not_equal"},
+      {"key": "selection_empty", "match_all": true, "operand": false, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex", "operator": "equal"},
+      {"key": "selector", "operand": "source.r", "operator": "not_equal"},
+      {"key": "selector", "operand": "meta.block.parameters.knitr", "operator": "not_equal"},
+      {"key": "selector", "operand": "meta.block.parameters.knitr", "operator": "not_equal"},
+      {"key": "setting.auto_match_enabled", "operand": true, "operator": "equal"},
+      {"key": "setting.command_mode", "operand": false, "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["$"],
+    "command": "insert_snippet", "args": {"contents": "\\$$0\\$"},
+    "context": [
+      {"key": "eol_selector", "match_all": true, "operand": "comment.line.percentage", "operator": "not_equal"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex", "operator": "equal"},
+      {"key": "selector", "operand": "source.r", "operator": "not_equal"},
+      {"key": "selector", "operand": "meta.block.parameters.knitr", "operator": "not_equal"},
+      {"key": "setting.auto_match_enabled", "operand": true, "operator": "equal"},
+      {"key": "setting.command_mode", "operand": false, "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["$"],
+    "command": "move", "args": {"by": "characters", "forward": true},
+    "context": [
+      {"key": "following_text", "match_all": true, "operand": "^\\$", "operator": "regex_contains"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "string.other.math", "operator": "equal"},
+      {"key": "selector", "operand": "source.r", "operator": "not_equal"},
+      {"key": "selector", "operand": "meta.block.parameters.knitr", "operator": "not_equal"},
+      {"key": "setting.auto_match_enabled", "operand": true, "operator": "equal"},
+      {"key": "setting.command_mode", "operand": false, "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["'"],
+    "command": "insert_snippet", "args": {"contents": "`$0'"},
+    "context": [
+      {"key": "eol_selector", "match_all": true, "operand": "comment.line.percentage", "operator": "not_equal"},
+      {"key": "preceding_text", "match_all": true, "operand": "(^$)|([\\s]$)", "operator": "regex_contains"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex", "operator": "equal"},
+      {"key": "setting.auto_match_enabled", "operand": true, "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["'"],
+    "command": "insert_snippet", "args": {"contents": "`${0:$SELECTION}'"},
+    "context": [
+      {"key": "eol_selector", "match_all": true, "operand": "comment.line.percentage", "operator": "not_equal"},
+      {"key": "selection_empty", "match_all": true, "operand": false, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex", "operator": "equal"},
+      {"key": "selector", "operand": "source.r", "operator": "not_equal"},
+      {"key": "selector", "operand": "meta.block.parameters.knitr", "operator": "not_equal"},
+      {"key": "setting.auto_match_enabled", "operand": true, "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["'"],
+    "command": "move", "args": {"by": "characters", "forward": true},
+    "context": [
+      {"key": "following_text", "match_all": true, "operand": "^'", "operator": "regex_contains"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex", "operator": "equal"},
+      {"key": "selector", "operand": "source.r", "operator": "not_equal"},
+      {"key": "selector", "operand": "meta.block.parameters.knitr", "operator": "not_equal"},
+      {"key": "setting.auto_match_enabled", "operand": true, "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["("],
+    "command": "insert_snippet", "args": {"contents": "($0)"},
+    "context": [
+      {"key": "eol_selector", "match_all": true, "operand": "comment.line.percentage", "operator": "not_equal"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "string.other.math, source.r", "operator": "equal"},
+      {"key": "setting.auto_match_enabled", "operand": true, "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["("],
+    "command": "insert_snippet", "args": {"contents": "($0\\)"},
+    "context": [
+      {"key": "eol_selector", "match_all": true, "operand": "comment.line.percentage", "operator": "not_equal"},
+      {"key": "preceding_text", "match_all": true, "operand": "(^\\\\(\\\\\\\\)*$)|((?<=[^\\\\])\\\\(\\\\\\\\)*$)", "operator": "regex_contains"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex", "operator": "equal"},
+      {"key": "setting.auto_match_enabled", "operand": true, "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["("],
+    "command": "insert_snippet", "args": {"contents": "(${0:$SELECTION})"},
+    "context": [
+      {"key": "eol_selector", "match_all": true, "operand": "comment.line.percentage", "operator": "not_equal"},
+      {"key": "selection_empty", "match_all": true, "operand": false, "operator": "equal"},
+      {"key": "selector", "operand": "string.other.math, source.r", "operator": "equal"},
+      {"key": "setting.auto_match_enabled", "operand": true, "operator": "equal"}
+    ]
+  },
+  {
+    "keys": [")"],
+    "command": "move", "args": {"by": "characters", "forward": true},
+    "context": [
+      {"key": "following_text", "match_all": false, "operand": "^\\)", "operator": "regex_contains"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "string.other.math, source.r", "operator": "equal"}
+    ]
+  },
+  {
+    "keys": [","],
+    "command": "ltx_fill", "args": {"auto_trigger_source": true},
+    "context": [
+      {"key": "preceding_text", "match_all": true, "operand": "\\\\(((no)?cite\\w*\\*?)|(\\w+ref)|(bibliography)|(usepackage))(\\[[^]]*\\])*\\{([^{},]*,)*[^{},]+,$", "operator": "regex_contains"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+    ]
+  },
+  {
+    "keys": [","],
+    "command": "run_macro_file", "args": {"file": "res://Packages/LaTeXing/macros/Trigger Fill With ,.hidden-sublime-macro"},
+    "context": [
+      {"key": "preceding_text", "match_all": true, "operand": "\\\\(((no)?cite\\w*\\*?)|(\\w+ref)|(bibliography)|(usepackage))(\\[[^]]*\\])*\\{([^{},]*,)*[^{},]+$", "operator": "regex_contains"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["<"],
+    "command": "insert_snippet", "args": {"contents": "<$0>"},
+    "context": [
+      {"key": "eol_selector", "match_all": true, "operand": "comment.line.percentage", "operator": "not_equal"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex.beamer, text.tex.latex.knitr.beamer", "operator": "equal"},
+      {"key": "selector", "operand": "source.r", "operator": "not_equal"},
+      {"key": "selector", "operand": "meta.block.parameters.knitr", "operator": "not_equal"},
+      {"key": "selector", "operand": "string.other.math", "operator": "not_equal"},
+      {"key": "setting.auto_match_enabled", "operand": true, "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["<"],
+    "command": "insert_snippet", "args": {"contents": "<${0:$SELECTION}>"},
+    "context": [
+      {"key": "eol_selector", "match_all": true, "operand": "comment.line.percentage", "operator": "not_equal"},
+      {"key": "selection_empty", "match_all": true, "operand": false, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex.beamer, text.tex.latex.knitr.beamer", "operator": "equal"},
+      {"key": "selector", "operand": "source.r", "operator": "not_equal"},
+      {"key": "selector", "operand": "meta.block.parameters.knitr", "operator": "not_equal"},
+      {"key": "selector", "operand": "string.other.math", "operator": "not_equal"},
+      {"key": "setting.auto_match_enabled", "operand": true, "operator": "equal"}
+    ]
+  },
+  {
+    "keys": [">"],
+    "command": "move", "args": {"by": "characters", "forward": true},
+    "context": [
+      {"key": "following_text", "match_all": false, "operand": "^>", "operator": "regex_contains"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex.beamer, text.tex.latex.knitr.beamer", "operator": "equal"},
+      {"key": "selector", "operand": "source.r", "operator": "not_equal"},
+      {"key": "selector", "operand": "meta.block.parameters.knitr", "operator": "not_equal"},
+      {"key": "selector", "operand": "string.other.math", "operator": "not_equal"}
+    ]
+  },
+  {
+    "keys": ["@"],
+    "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Snippet: Bibtex "},
+    "context": [
+      {"key": "following_text", "match_all": true, "operand": "^[\\s\\t]*", "operator": "regex_match"},
+      {"key": "preceding_text", "match_all": true, "operand": "[\\s\\t]*$", "operator": "regex_match"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "text.bibtex", "operator": "equal"},
+      {"key": "selector", "operand": "meta.entry.braces.bibtex", "operator": "not_equal"}
+    ]
+  },
+  {
+    "keys": ["["],
+    "command": "insert_snippet", "args": {"contents": "[$0]"},
+    "context": [
+      {"key": "eol_selector", "match_all": true, "operand": "comment.line.percentage", "operator": "not_equal"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "string.other.math", "operator": "equal"},
+      {"key": "setting.auto_match_enabled", "operand": true, "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["["],
+    "command": "insert_snippet", "args": {"contents": "[$0\\]"},
+    "context": [
+      {"key": "eol_selector", "match_all": true, "operand": "comment.line.percentage", "operator": "not_equal"},
+      {"key": "preceding_text", "match_all": true, "operand": "(^\\\\(\\\\\\\\)*$)|((?<=[^\\\\])\\\\(\\\\\\\\)*$)", "operator": "regex_contains"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex", "operator": "equal"},
+      {"key": "setting.auto_match_enabled", "operand": true, "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["["],
+    "command": "insert_snippet", "args": {"contents": "[${0:$SELECTION}]"},
+    "context": [
+      {"key": "eol_selector", "match_all": true, "operand": "comment.line.percentage", "operator": "not_equal"},
+      {"key": "selection_empty", "match_all": true, "operand": false, "operator": "equal"},
+      {"key": "selector", "operand": "string.other.math", "operator": "equal"},
+      {"key": "setting.auto_match_enabled", "operand": true, "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["["],
+    "command": "run_macro_file", "args": {"file": "res://Packages/LaTeXing/macros/Trigger Fill With [.hidden-sublime-macro"},
+    "context": [
+      {"key": "preceding_text", "match_all": true, "operand": "\\\\\\b((\\w*ref))\\b(\\[[^]]*\\])*", "operator": "regex_contains"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["\\"],
+    "command": "insert_snippet", "args": {"contents": "\\\\$1\\{$SELECTION\\}$0"},
+    "context": [
+      {"key": "eol_selector", "match_all": true, "operand": "comment.line.percentage", "operator": "not_equal"},
+      {"key": "selection_empty", "match_all": true, "operand": false, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex", "operator": "equal"},
+      {"key": "selector", "match_all": true, "operand": "meta.group.braces.tex", "operator": "not_equal"}
+    ]
+  },
+  {
+    "keys": ["]"],
+    "command": "move", "args": {"by": "characters", "forward": true},
+    "context": [
+      {"key": "following_text", "match_all": false, "operand": "^\\]", "operator": "regex_contains"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "string.other.math", "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["^", "^"],
+    "command": "insert_snippet", "args": {"contents": "^{$1}$2"},
+    "context": [
+      {"key": "eol_selector", "match_all": true, "operand": "comment.line.percentage", "operator": "not_equal"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "string.other.math", "operator": "equal"},
+      {"key": "setting.auto_match_enabled", "operand": true, "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["_", "_"],
+    "command": "insert_snippet", "args": {"contents": "_{$1}$2"},
+    "context": [
+      {"key": "eol_selector", "match_all": true, "operand": "comment.line.percentage", "operator": "not_equal"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "string.other.math", "operator": "equal"},
+      {"key": "setting.auto_match_enabled", "operand": true, "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["backspace"],
+    "command": "run_macro_file", "args": {"file": "res://Packages/LaTeXing/macros/Delete And Hide Auto Complete.hidden-sublime-macro"},
+    "context": [
+      {"key": "preceding_text", "match_all": true, "operand": "(^\\\\(\\\\\\\\)*$)|((?<=[^\\\\])\\\\(\\\\\\\\)*$)", "operator": "regex_contains"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["backspace"],
+    "command": "run_macro_file", "args": {"file": "res://Packages/LaTeXing/macros/Delete Two Left.hidden-sublime-macro"},
+    "context": [
+      {"key": "preceding_text", "match_all": true, "operand": "\\\\(\\%|\\#|\\$|\\&|\\{|\\}|\\\\_)$", "operator": "regex_contains"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["backspace"],
+    "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Left Right.sublime-macro"},
+    "context": [
+      {"key": "following_text", "match_all": true, "operand": "^'", "operator": "regex_contains"},
+      {"key": "preceding_text", "match_all": true, "operand": "`$", "operator": "regex_contains"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex", "operator": "equal"},
+      {"key": "selector", "operand": "source.r", "operator": "not_equal"},
+      {"key": "selector", "operand": "meta.block.parameters.knitr", "operator": "not_equal"},
+      {"key": "setting.auto_match_enabled", "operand": true, "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["backspace"],
+    "command": "run_macro_file", "args": {"file": "res://Packages/LaTeXing/macros/Delete Two Left Right.hidden-sublime-macro"},
+    "context": [
+      {"key": "following_text", "match_all": true, "operand": "^''", "operator": "regex_contains"},
+      {"key": "preceding_text", "match_all": true, "operand": "``$", "operator": "regex_contains"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex", "operator": "equal"},
+      {"key": "selector", "operand": "source.r", "operator": "not_equal"},
+      {"key": "selector", "operand": "meta.block.parameters.knitr", "operator": "not_equal"},
+      {"key": "setting.auto_match_enabled", "operand": true, "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["backspace"],
+    "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Left Right.sublime-macro"},
+    "context": [
+      {"key": "following_text", "match_all": true, "operand": "^\\$", "operator": "regex_contains"},
+      {"key": "preceding_text", "match_all": true, "operand": "\\$$", "operator": "regex_contains"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "string.other.math", "operator": "equal"},
+      {"key": "selector", "operand": "source.r", "operator": "not_equal"},
+      {"key": "selector", "operand": "meta.block.parameters.knitr", "operator": "not_equal"},
+      {"key": "setting.auto_match_enabled", "operand": true, "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["backspace"],
+    "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Left Right.sublime-macro"},
+    "context": [
+      {"key": "following_text", "match_all": true, "operand": "^>", "operator": "regex_contains"},
+      {"key": "preceding_text", "match_all": true, "operand": "<$", "operator": "regex_contains"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex.beamer, text.tex.latex.knitr.beamer", "operator": "equal"},
+      {"key": "selector", "operand": "source.r", "operator": "not_equal"},
+      {"key": "selector", "operand": "meta.block.parameters.knitr", "operator": "not_equal"},
+      {"key": "selector", "operand": "string.other.math", "operator": "not_equal"},
+      {"key": "setting.auto_match_enabled", "operand": true, "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["enter"],
+    "command": "ltx_move", "args": {"by": "environment", "kind": "\\$"},
+    "context": [
+      {"key": "following_text", "match_all": false, "operand": "^[^\\$]*\\$", "operator": "regex_contains"},
+      {"key": "preceding_text", "match_all": false, "operand": "\\$[^\\$]*$", "operator": "regex_contains"},
+      {"key": "selector", "operand": "string.other.math", "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["shift+enter"],
+    "command": "insert_snippet", "args": {"contents": "\\tabularnewline\n"},
+    "context": [
+      {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["shift+enter"],
+    "command": "insert_snippet", "args": {"contents": "\n\\item $0"},
+    "context": [
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex meta.function.environment.list.latex", "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["shift+enter"],
+    "command": "insert_snippet", "args": {"contents": "\n\\item<$1> $0"},
+    "context": [
+      {"key": "preceding_text", "match_all": true, "operand": "\\\\item<[\\d-]*>", "operator": "regex_contains"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex.beamer meta.function.environment.list.latex, text.tex.latex.knitr.beamer meta.function.environment.list.latex", "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["tab"],
+    "command": "auto_complete",
+    "context": [
+      {"key": "preceding_text", "match_all": true, "operand": "^ltx$", "operator": "regex_contains"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["tab"],
+    "command": "ltx_insert_special_symbols", "args": {"braket_source": true},
+    "context": [
+      {"key": "following_text", "match_all": true, "operand": "^[>\\)\\]\\}](\\s|$)", "operator": "regex_contains"},
+      {"key": "preceding_text", "match_all": true, "operand": "(\\s|^)[<\\(\\[\\{]$", "operator": "regex_contains"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["tab"],
+    "command": "ltx_insert_special_symbols",
+    "context": [
+      {"key": "preceding_text", "match_all": true, "operand": "(^|(?<=[^\\\\]))(\\\\\\\\)*[%#&{}_]$", "operator": "regex_contains"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["{"],
+    "command": "insert_snippet", "args": {"contents": "{$0\\\\}"},
+    "context": [
+      {"key": "eol_selector", "match_all": true, "operand": "comment.line.percentage", "operator": "not_equal"},
+      {"key": "preceding_text", "match_all": true, "operand": "(^\\\\(\\\\\\\\)*$)|((?<=[^\\\\])\\\\(\\\\\\\\)*$)", "operator": "regex_contains"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex", "operator": "equal"},
+      {"key": "setting.auto_match_enabled", "operand": true, "operator": "equal"}
+    ]
+  },
+  {
+    "keys": ["{"],
+    "command": "run_macro_file", "args": {"file": "res://Packages/LaTeXing/macros/Trigger Fill With {.hidden-sublime-macro"},
+    "context": [
+      {"key": "preceding_text", "match_all": true, "operand": "\\\\\\b((includegraphics.*)|(input|include|subfile)|(bibliography)|(\\w*(cite|bibentry)\\w*\\*?)|(\\w*ref)|([Ii]?ac[uplsf]?[suip]?(de)?\\*?)|(bibliographystyle|documentclass|usepackage))\\b(\\[[^]]*\\])*", "operator": "regex_contains"},
+      {"key": "preceding_text", "match_all": true, "operand": "\\\\\\b((href))\\b(\\[[^]]*\\])*$", "operator": "not_regex_contains"},
+      {"key": "selection_empty", "match_all": true, "operand": true, "operator": "equal"},
+      {"key": "selector", "operand": "text.tex.latex", "operator": "equal"}
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+{
+    "linux": {
+        "cmd": [
+            "pdflatex",
+            "-interaction=nonstopmode",
+            "-interaction=batchmode",
+            "-jobname={pdfname}",
+            "-output-directory={outdir}",
+            "{file}"
+        ],
+        "file_regex": "^(?:W|E|B):\\s(.*):([0-9]+)",
+        "path": "$PATH:/usr/texbin:/usr/local/bin:/opt/local/bin"
+    },
+    "osx": {
+        "cmd": [
+            "pdflatex",
+            "-interaction=nonstopmode",
+            "-interaction=batchmode",
+            "-jobname={pdfname}",
+            "-output-directory={outdir}",
+            "{file}"
+        ],
+        "file_regex": "^(?:W|E|B):\\s(.*):([0-9]+)",
+        "path": "$PATH:/usr/texbin:/usr/local/bin:/opt/local/bin"
+    },
+    "selector": "text.tex.latex.tikz",
+    "target": "ltx_tikz_compiler",
+    "variants": [
+        {
+            "name": "Clean up Files",
+            "target": "ltx_clean"
+        }
+    ],
+    "windows": {
+        "cmd": [
+            "pdflatex",
+            "-interaction=nonstopmode",
+            "-interaction=batchmode",
+            "-jobname={pdfname}",
+            "-output-directory={outdir}",
+            "{file}"
+        ],
+        "file_regex": "^(?:W|E|B):\\s(.*):([0-9]+)",
+        "path": "C:\\MikTeX\\miktex\\bin;$PATH"
+    }
+}

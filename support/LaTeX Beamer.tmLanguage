@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>tex</string>
+		<string>ltx</string>
+	</array>
+	<key>name</key>
+	<string>LaTeXing Beamer</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>text.tex.latex.beamer</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>text.tex.latex.ing</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>text.tex.latex.beamer.ing</string>
+	<key>uuid</key>
+	<string>462713e0-811d-45ef-8810-15df1b5c86c3</string>
+</dict>
+</plist>

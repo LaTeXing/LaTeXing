@@ -1,0 +1,22 @@
+{
+	"scope": "string.other.math",
+	"completions": 
+	[
+			{ "trigger": "(", "contents": "\\left(" },
+			{ "trigger": ")", "contents": "\\right)" },
+			{ "trigger": "[", "contents": "\\left[" },
+			{ "trigger": "]", "contents":  "\\right]" },
+
+			{ "trigger": "|", "contents": "\\left|" },
+			{ "trigger": "/", "contents": "\\left/" },
+			
+			{ "trigger": "\\left|", "contents": "\\right|" },
+			{ "trigger": "\\left/", "contents": "\\right/" },
+
+			{ "trigger": ".", "contents": "\\dots" },
+
+			{ "trigger": "*", "contents": "\\times" },
+			{ "trigger": "<", "contents": "\\leq" },
+			{ "trigger": ">", "contents":  "\\geq" }
+	]
+}

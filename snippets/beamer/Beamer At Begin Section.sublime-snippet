@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+\AtBeginSection {
+	\begin{frame}
+		\frametitle{Outline}
+		\tableofcontents[currentsection,currentsubsection]
+	\end{frame}
+}
+]]></content>
+	<scope>text.tex.latex.beamer, text.tex.latex.knitr.beamer</scope>
+	<description>Beamer: At Begin of Section</description>
+</snippet>

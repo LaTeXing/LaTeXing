@@ -1,0 +1,150 @@
+[
+    {
+        "id": "tools",
+        "children":
+        [
+            {
+                "caption": "Packages",
+                "id": "packages",
+                "children":
+                [
+                    {
+                        "caption": "LaTeXing",
+                        "children":
+                        [
+                            {
+                                "caption": "Documentation",
+                                "command": "ltx_open_documentation"
+                            },
+                            {
+                                "caption": "Version",
+                                "command": "ltx_version"
+                            },
+                            {
+                                "caption": "Buy License",
+                                "command": "ltx_buy_license"
+                            },
+                            {
+                                "caption": "Install License",
+                                "command": "ltx_install_license"
+                            },
+                            { "caption": "-" },
+                            {
+                                "caption": "Open PDF",
+                                "command": "ltx_open_pdf"
+                            },
+                            {
+                                "caption": "Jump To PDF",
+                                "command": "ltx_jump_to_pdf"
+                            },
+                            {
+                                "caption": "Check System",
+                                "command": "ltx_check_system"
+                            },
+                            {
+                                "caption": "Import Citation(s)",
+                                "command": "ltx_cite_import"
+                            },
+                            {
+                                "caption": "Texcount",
+                                "command": "ltx_texcount"
+                            },
+                            {
+                                "caption": "Insert TeX Symbols",
+                                "command": "ltx_insert_tex_symbols"
+                            },
+                            {
+                                "caption": "Toggle Preferences",
+                                "command": "ltx_toggle_preferences"
+                            },
+                            { "caption": "-" },
+                            {
+                                "caption": "Settings – Default",
+                                "command": "open_file", "args": { "file": "${packages}/LaTeXing/LaTeXing.sublime-settings" }
+                            },
+                            {
+                                "caption": "Settings – Extended",
+                                "command": "ltx_extended_preferences"
+                            },
+                            {
+                                "caption": "Settings – User",
+                                "command": "open_file", "args": { "file": "${packages}/User/LaTeXing.sublime-settings" }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "preferences",
+        "children":
+        [
+            {
+                "caption": "Package Settings",
+                "mnemonic": "P",
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "LaTeXing",
+                        "mnemonic": "L",
+                        "children":
+                        [
+                            {
+                                "caption": "Documentation",
+                                "command": "ltx_open_documentation"
+                            },
+                            {
+                                "caption": "Version",
+                                "command": "ltx_version"
+                            },
+                            {
+                                "caption": "Buy License",
+                                "command": "ltx_buy_license"
+                            },
+                            {
+                                "caption": "Install License",
+                                "command": "ltx_install_license"
+                            },
+                            { "caption": "-" },
+                            {
+                                "caption": "Settings – Default",
+                                "command": "open_file", "args": { "file": "${packages}/LaTeXing/LaTeXing.sublime-settings" }
+                            },
+                            {
+                                "caption": "Settings – Extended",
+                                "command": "ltx_extended_preferences"
+                            },
+                            {
+                                "caption": "Settings – User",
+                                "command": "open_file", "args": { "file": "${packages}/User/LaTeXing.sublime-settings" }
+                            },
+                            { "caption": "-" },
+                            {
+                                "caption": "Key Bindings – Default",
+                                "command": "open_file", "args": { "file": "${packages}/LaTeXing/Default.sublime-keymap" }
+                            },
+                            {
+                                "caption": "Key Bindings - OSX",
+                                "command": "open_file", "args": { "file": "${packages}/LaTeXing/Default (OSX).sublime-keymap",  "platform": "OSX" }
+                            },
+                            {
+                                "caption": "Key Bindings - Windows",
+                                "command": "open_file", "args": { "file": "${packages}/LaTeXing/Default (Windows).sublime-keymap", "platform": "Windows" }
+                            },
+                            {
+                                "caption": "Key Bindings - Linux",
+                                "command": "open_file", "args": { "file": "${packages}/LaTeXing/Default (Linux).sublime-keymap", "platform": "Linux" }
+                            },
+                            {
+                                "caption": "Key Bindings – User",
+                                "command": "open_file", "args": { "file": "${packages}/User/Default.sublime-keymap" }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

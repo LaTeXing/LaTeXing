@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+\begin{table}
+	\begin{tabular}{${1}}
+		${4}
+	\end{tabular}
+	\caption{${2:caption}}
+	\label{tbl:${3:label}}
+\end{table}
+]]></content>
+	<tabTrigger>tbl</tabTrigger>
+	<scope>text.tex.latex</scope>
+  <description>New table</description>
+</snippet>

@@ -1,0 +1,4 @@
+[
+	{ "command": "insert_snippet", "args": { "contents": "\\{$1\\}" } },
+	{ "command": "ltx_fill", "args": { "auto_trigger_source": true }}
+]

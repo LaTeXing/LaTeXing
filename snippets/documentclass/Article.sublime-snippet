@@ -1,0 +1,26 @@
+<snippet>
+  <content><![CDATA[
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section{Title}
+\label{sec:title}
+
+\subsection{Subtitle}
+\label{ssec:subtitle}
+
+Plain text.
+
+\subsection{Another subtitle}
+\label{ssec:another_subtitle}
+
+More plain text.$1
+
+\\end{document}
+]]></content>
+  <tabTrigger>documentclass{article}</tabTrigger>
+  <scope>text.plain, text.tex.latex</scope>
+  <description>New Article</description>
+</snippet>

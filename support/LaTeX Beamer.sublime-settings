@@ -1,0 +1,13 @@
+{
+	"auto_complete": true,
+	"auto_complete_triggers": [ 
+		{
+			"selector": "text.tex.latex.beamer",
+			"characters": "\\"
+		},
+		{
+			"selector": "text.tex.latex.knitr.beamer",
+			"characters": "\\"
+		} 
+	]
+}

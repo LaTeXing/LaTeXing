@@ -1,0 +1,18 @@
+{
+  "fileTypes": [
+    "rnw",
+    "snw",
+    "rtex"
+  ],
+  "name": "LaTeXing (Knitr)",
+  "patterns": [
+    {
+      "include": "text.tex.latex.knitr"
+    },
+    {
+      "include": "text.tex.latex"
+    }
+  ],
+  "scopeName": "text.tex.latex.knitr.ing",
+  "uuid": "2227a33d-299e-4aff-b493-4f9d2375f5ad"
+}

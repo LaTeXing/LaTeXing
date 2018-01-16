@@ -1,0 +1,36 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+import json, sys
+
+try:
+	from urllib.request import build_opener, Request, HTTPPasswordMgrWithDefaultRealm, ProxyHandler, ProxyBasicAuthHandler, ProxyDigestAuthHandler
+except:
+	from urllib2 import build_opener, Request, HTTPPasswordMgrWithDefaultRealm, ProxyHandler, ProxyBasicAuthHandler, ProxyDigestAuthHandler
+
+url = sys.argv[1]
+headers = json.loads(sys.argv[2])
+settings = json.loads(sys.argv[3])
+file_name = sys.argv[4]
+
+if settings["http_proxy"] or settings["https_proxy"]:
+	proxies = {}
+	if settings["http_proxy"]:
+		proxies["http"] = settings["http_proxy"]
+	if settings["https_proxy"]:
+		proxies["https"] = settings["https_proxy"]
+		proxy_handler = ProxyHandler(proxies)
+else:
+	proxy_handler = ProxyHandler()
+
+password_manager = HTTPPasswordMgrWithDefaultRealm()
+if settings["proxy_username"] and settings["proxy_password"]:
+	if settings["http_proxy"]:
+		password_manager.add_password(None, settings["http_proxy"], settings["proxy_username"], settings["proxy_password"])
+	if settings["https_proxy"]:
+		password_manager.add_password(None, settings["https_proxy"], settings["proxy_username"], settings["proxy_password"])
+
+opener = build_opener(proxy_handler, ProxyBasicAuthHandler(password_manager), ProxyDigestAuthHandler(password_manager))
+
+with open(file_name, "wb") as f:
+	f.write(opener.open(Request(url, headers = headers)).read())

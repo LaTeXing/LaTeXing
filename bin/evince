@@ -1,0 +1,23 @@
+#!/bin/sh
+
+if [ "$#" -eq 3 ]; then
+	EVINCE="$1"
+	PDFFILE="$2"
+	SUBLIME="$3"
+else
+	EVINCE="$1"
+	PDFFILE="$2"
+fi
+
+if [ "$SUBLIME" ]; then
+	if [ -f "${PDFFILE%%.pdf}.synctex.gz" ];then
+		python evince_reverse_sync "$PDFFILE" "$SUBLIME \"%f\":%l" & 
+		BACKWARD_SEARCH_PID=$!
+	fi
+fi
+
+$EVINCE "$PDFFILE"
+
+if [ "$BACKWARD_SEARCH_PID" ];then
+	kill $BACKWARD_SEARCH_PID
+fi
