@@ -9,3 +9,7 @@ If you already have package control, just follow these steps:
 - Select Package Control: Install Package
 - Select LaTeXing
 - Restart Sublime Text
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT)
