@@ -32,7 +32,7 @@ class LtxExtendedPreferencesCommand(sublime_plugin.WindowCommand):
             if i >= 0:
                 self.window.run_command("open_file", {"file": "${packages}/%s" % items[i][1 if user else 0]})
 
-        if sublime.ok_cancel_dialog("You are trying to access the extened settings, be sure that you know what you are doing. In case of a problem please reset the files and try it again before reporting any problem."):
+        if sublime.ok_cancel_dialog("You are trying to access the extended settings, be sure that you know what you are doing. In case of a problem please reset the files and try it again before reporting any problem."):
             self.window.show_quick_panel(message, on_done)
 
 
